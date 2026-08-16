@@ -1,0 +1,57 @@
+{
+  "opportunity_id": "80716310-11bb-47c9-baca-902ed6155e9d",
+  "revision": "9b0ce7bbca56d78b",
+  "files": [
+    {
+      "id": "editable-pack",
+      "kind": "zip",
+      "filename": "trace-evaluate-and-reinforce-tracer-editable-pack.zip",
+      "label": "Complete editable pack",
+      "reason": "All generated submission files in one download",
+      "media_type": "application/zip",
+      "download_url": "/api/opportunities/80716310-11bb-47c9-baca-902ed6155e9d/artifacts/editable-pack"
+    },
+    {
+      "id": "bid-response",
+      "kind": "docx",
+      "filename": "trace-evaluate-and-reinforce-tracer-bid-response.docx",
+      "label": "Editable bid response",
+      "reason": "7 buyer-facing section(s) combined in order",
+      "media_type": "application/vnd.openxmlformats-officedocument.wordprocessingml.document",
+      "download_url": "/api/opportunities/80716310-11bb-47c9-baca-902ed6155e9d/artifacts/bid-response"
+    },
+    {
+      "id": "pricing-schedule",
+      "kind": "xlsx",
+      "filename": "trace-evaluate-and-reinforce-tracer-pricing-schedule.xlsx",
+      "label": "Editable pricing schedule",
+      "reason": "Kept separate from the narrative response for upload and commercial review",
+      "media_type": "application/vnd.openxmlformats-officedocument.spreadsheetml.sheet",
+      "download_url": "/api/opportunities/80716310-11bb-47c9-baca-902ed6155e9d/artifacts/pricing-schedule"
+    }
+  ],
+  "actions": [
+    {
+      "item": "Appendix E \u2013 Procurement Specific Questionnaire",
+      "handling": "manual_form",
+      "status": "to_check",
+      "output": "Appendix E \u2013 Procurement Specific Questionnaire (portal/CDP completion and uploaded PDF or share code needed)",
+      "source": "Volume 3, Appendix E, pp. 10-13"
+    },
+    {
+      "item": "Price submission for C8",
+      "handling": "separate_attachment",
+      "status": "to_check",
+      "output": "Acme Ltd - Pricing Schedule.xlsx",
+      "source": "Volume 1, p. 12"
+    },
+    {
+      "item": "Company details / registered address / company number / signatory details",
+      "handling": "manual_form",
+      "status": "company_input_required",
+      "output": "Insert into Appendix A, Appendix B, Appendix E and Schedule 1",
+      "source": "Volume 3, Appendices A, B and E"
+    }
+  ],
+  "requirements_assurance": "Checked Volume 1 (pp. 3-12) for scope, deliverables, evaluation criteria, submission method and timetable; Volume 4 (pp. 2-13) for Appendices A-E and the PSQ; and Volume 4 Schedule 1 (pp. 15-16) for contract particulars. The response set maps to those documents as follows: technical narrative addresses T1-T3 and T5-T7; social value response addresses S10-S11; Appendix A, B, C and E are drafted as returnable forms; Appendix D is completed as a nil reserved-information return; pricing is treated as a separate attachment for C8, with C9 covered in the commercial schedule; contract particulars are populated to support human review and award processing."
+}

@@ -1,0 +1,88 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>SignalRoute — Tender workspace</title>
+    <link rel="icon" href="/favicon.svg" type="image/svg+xml">
+    <link rel="stylesheet" href="/assets/styles.css">
+  </head>
+  <body>
+    <header class="topbar">
+      <a class="brand" href="/" aria-label="SignalRoute home">
+        <span class="brand-mark">S</span>
+        <span>SignalRoute</span>
+      </a>
+      <div class="topbar-actions">
+        <button class="profile-link" id="open-profile">Bid profile</button>
+        <span class="environment">Tender workspace · local</span>
+      </div>
+    </header>
+
+    <main>
+      <section class="hero">
+        <div>
+          <p class="eyebrow">Bid preparation</p>
+          <h1>From tender alert to working response.</h1>
+          <p class="subhead">Find the official route, drop in the documents, and create a sourced first pass without rebuilding the context in ChatGPT.</p>
+        </div>
+        <div class="hero-actions">
+          <button class="quiet" id="refresh">Refresh</button>
+          <button class="primary" id="sync-inbox">Sync tender emails</button>
+        </div>
+      </section>
+
+      <section class="workspace">
+        <header class="workspace-heading">
+          <div>
+            <p class="eyebrow">Live tenders</p>
+            <h2>Opportunity inbox <span id="opportunity-count"></span></h2>
+          </div>
+          <label class="search">
+            <span class="sr-only">Search tenders</span>
+            <input id="search" type="search" placeholder="Search tenders…">
+          </label>
+        </header>
+        <div id="opportunities" class="opportunity-list">
+          <div class="empty">Loading tenders…</div>
+        </div>
+      </section>
+    </main>
+
+    <dialog id="detail-dialog">
+      <div id="detail"></div>
+    </dialog>
+    <dialog id="profile-dialog" class="profile-dialog">
+      <form id="profile-form">
+        <header class="detail-header">
+          <div>
+            <p class="eyebrow">Reusable bid context</p>
+            <h2>Bid profile</h2>
+            <p class="profile-intro">Applied to every generated response. Leave anything unknown blank—the system will ask for it instead of inventing it.</p>
+          </div>
+          <button class="close profile-close" type="button" aria-label="Close">×</button>
+        </header>
+        <div class="profile-fields">
+          <div class="field-row">
+            <label><span>Company name</span><input name="company_name" autocomplete="organization" placeholder="Your company"></label>
+            <label><span>Writing style</span><input name="tone" placeholder="British professional, warm and understated"></label>
+          </div>
+          <label><span>Company overview</span><textarea name="company_overview" rows="3" placeholder="What you do, who you serve and how you deliver"></textarea></label>
+          <label><span>Relevant experience</span><textarea name="experience" rows="6" placeholder="Projects, outcomes, clients, contract sizes and evidence the bid writer may safely use"></textarea></label>
+          <label><span>Strengths and proof points</span><textarea name="strengths" rows="4" placeholder="Team, accreditations, delivery approach, locations, systems and measurable results"></textarea></label>
+          <div class="field-row pricing-fields">
+            <label><span>Target below a stated maximum budget</span><div class="number-input"><input name="target_discount_percent" type="number" min="0" max="50" step="1"><b>%</b></div></label>
+            <label><span>Standard commercial assumptions</span><textarea name="standard_assumptions" rows="3" placeholder="VAT, expenses, travel, payment or validity assumptions"></textarea></label>
+          </div>
+          <p class="field-note">Pricing is only populated when the tender explicitly states a maximum budget or ceiling. An estimated contract value is not treated as permission to price.</p>
+        </div>
+        <footer class="profile-footer">
+          <span id="profile-status">Stored locally</span>
+          <button class="primary" type="submit">Save bid profile</button>
+        </footer>
+      </form>
+    </dialog>
+    <div id="toast" role="status" aria-live="polite"></div>
+    <script src="/assets/app.js"></script>
+  </body>
+</html>

@@ -1,0 +1,78 @@
+{
+  "opportunity_id": "80716310-11bb-47c9-baca-902ed6155e9d",
+  "revision": "9bc1132b4a614506",
+  "files": [
+    {
+      "id": "editable-pack",
+      "kind": "zip",
+      "filename": "trace-evaluate-and-reinforce-tracer-editable-pack.zip",
+      "label": "Complete editable pack",
+      "reason": "All generated submission files in one download",
+      "media_type": "application/zip",
+      "download_url": "/api/opportunities/80716310-11bb-47c9-baca-902ed6155e9d/artifacts/editable-pack"
+    },
+    {
+      "id": "bid-response",
+      "kind": "docx",
+      "filename": "trace-evaluate-and-reinforce-tracer-bid-response.docx",
+      "label": "Editable bid response",
+      "reason": "10 buyer-facing section(s) combined in order",
+      "media_type": "application/vnd.openxmlformats-officedocument.wordprocessingml.document",
+      "download_url": "/api/opportunities/80716310-11bb-47c9-baca-902ed6155e9d/artifacts/bid-response"
+    },
+    {
+      "id": "pricing-schedule",
+      "kind": "xlsx",
+      "filename": "trace-evaluate-and-reinforce-tracer-pricing-schedule.xlsx",
+      "label": "Editable pricing schedule",
+      "reason": "Kept separate from the narrative response for upload and commercial review",
+      "media_type": "application/vnd.openxmlformats-officedocument.spreadsheetml.sheet",
+      "download_url": "/api/opportunities/80716310-11bb-47c9-baca-902ed6155e9d/artifacts/pricing-schedule"
+    }
+  ],
+  "actions": [
+    {
+      "item": "Commercial price C8",
+      "handling": "commercial_check",
+      "status": "ready",
+      "output": "Commercial Response \u2013 C8 and C9",
+      "source": "Volume 2 p. 4; Volume 1 p. 10; clarification response 11"
+    },
+    {
+      "item": "Preferred payment schedule C9",
+      "handling": "commercial_check",
+      "status": "ready",
+      "output": "Commercial Response \u2013 C8 and C9",
+      "source": "Volume 2 p. 4; Volume 1 p. 10"
+    },
+    {
+      "item": "Appendix E PSQ",
+      "handling": "manual_form",
+      "status": "company_input_required",
+      "output": "Appendix E \u2013 Procurement Specific Questionnaire",
+      "source": "Volume 4 Appendix E, pp. 10\u201313"
+    },
+    {
+      "item": "CDP core supplier information share code / PDF",
+      "handling": "portal_entry",
+      "status": "company_input_required",
+      "output": "Portal entry / PDF reference to be inserted in Appendix E",
+      "source": "Volume 4 Appendix E, p. 12"
+    },
+    {
+      "item": "Signed pages / signature fields",
+      "handling": "manual_form",
+      "status": "company_input_required",
+      "output": "Manual signature fields in Appendix A, B, C and E",
+      "source": "Volume 4 Appendices A, B, C and E"
+    },
+    {
+      "item": "Separate pricing schedule attachment",
+      "handling": "separate_attachment",
+      "status": "ready",
+      "output": "No separate pricing attachment required; if buyer requests one, use Acme Ltd - Pricing Schedule.xlsx",
+      "source": "Not required by clarified pack; commercial response embedded in response document"
+    }
+  ],
+  "requirements_assurance": "Checked Volume 1 RfP (Introduction, Service Deliverables, Service Scope, Table 2, Table 3, Table 4 and Table 5, pp. 3\u201313), Volume 2 Response Document (T1\u2013T7, C8\u2013C9, S10\u2013S11, pp. 2\u20135), Volume 4 Commercial Requirements / Appendices A\u2013E (pp. 1\u201313), the clarification log (especially Q1, Q3, Q4, Q5, Q7, Q9, Q10, Q11, Q14, Q16, Q17, Q18, Q19) and the contract short form / Schedule 1 (pp. 2\u201316). The response set maps to those documents by providing drafted content for the technical, commercial, social value and required declaration/questionnaire items, plus a fixed-price commercial placeholder strategy aligned to the confirmed \u00a360k ceiling and the clarified no-subcontracting / direct implementation position."
+}

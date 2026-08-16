@@ -1,0 +1,18 @@
+{
+  "files": [
+    {
+      "id": "bid-response",
+      "kind": "docx",
+      "filename": "trace-evaluate-and-reinforce-tracer-bid-response.docx",
+      "label": "Editable bid response",
+      "reason": "7 buyer-facing section(s) combined in order"
+    },
+    {
+      "id": "pricing-schedule",
+      "kind": "xlsx",
+      "filename": "trace-evaluate-and-reinforce-tracer-pricing-schedule.xlsx",
+      "label": "Editable pricing schedule",
+      "reason": "Kept separate from the narrative response for upload and commercial review"
+    }
+  ]
+}

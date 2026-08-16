@@ -1,0 +1,35 @@
+[
+  {
+    "source": "fixture",
+    "external_id": "demo-uk4-001",
+    "subject": "Tender alert: Case management workflow replacement",
+    "sender": "alerts@example.test",
+    "received_at": "2026-08-10T09:15:00+00:00",
+    "body": "Title: Case management workflow replacement\nNotice type: UK4 Tender notice\nBuyer: Northbridge Borough Council\nValue: £420,000 excluding VAT\nDeadline: 12 September 2026\nLocation: United Kingdom\nLink: https://example.test/notices/uk4-001\n\nThe authority needs a configurable case management platform, data migration, reporting dashboards and integrations with existing systems."
+  },
+  {
+    "source": "fixture",
+    "external_id": "demo-uk6-002",
+    "subject": "Contract award: Finance automation platform",
+    "sender": "alerts@example.test",
+    "received_at": "2026-08-11T11:30:00+00:00",
+    "body": "Title: Finance automation platform implementation\nNotice type: UK6 Contract award notice\nBuyer: Westborough Health Partnership\nValue: £780,000\nLocation: England\nLink: https://example.test/notices/uk6-002\n\nThe awarded programme covers workflow automation, finance system integration and operational reporting."
+  },
+  {
+    "source": "fixture",
+    "external_id": "demo-uk2-003",
+    "subject": "Early engagement: Integrated resident portal",
+    "sender": "alerts@example.test",
+    "received_at": "2026-08-12T08:40:00+00:00",
+    "body": "Title: Integrated resident services portal\nNotice type: UK2 Preliminary market engagement notice\nBuyer: Eastmere City Council\nValue: Estimated £250,000\nDeadline: 28 August 2026\nLocation: United Kingdom\nLink: https://example.test/notices/uk2-003\n\nThe council is testing the market for a digital platform joining online forms, CRM workflows and reporting."
+  },
+  {
+    "source": "fixture",
+    "external_id": "demo-uk1-004",
+    "subject": "Pipeline notice: Grounds maintenance framework",
+    "sender": "alerts@example.test",
+    "received_at": "2026-08-13T14:05:00+00:00",
+    "body": "Title: Grounds maintenance framework\nNotice type: UK1 Pipeline notice\nBuyer: Southbank Estates\nValue: £1,200,000\nLocation: South East England\nLink: https://example.test/notices/uk1-004\n\nA future framework covering grass cutting, tree works and seasonal grounds maintenance."
+  }
+]
+

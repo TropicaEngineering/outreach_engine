@@ -1,0 +1,26 @@
+[
+  {
+    "source": "inbound_email",
+    "external_id": "demo-inbound-001",
+    "subject": "Integration partner for customer onboarding project",
+    "sender": "operations@example.test",
+    "received_at": "2026-08-12T10:20:00+00:00",
+    "body": "Title: Customer onboarding integration project\nCompany: Alder & Finch Services\nBudget: £85,000\nDeadline: 5 September 2026\n\nWe are looking for a delivery partner to integrate our CRM, document workflow and customer portal. A proposal and implementation plan would be useful this month."
+  },
+  {
+    "source": "partner_webhook",
+    "external_id": "demo-partner-002",
+    "subject": "Reporting automation partnership",
+    "sender": "alliances@example.test",
+    "received_at": "2026-08-13T13:45:00+00:00",
+    "body": "Title: Reporting automation partnership\nOrganisation: Meridian Operations\nBudget: Initial discovery £25,000\n\nOur implementation team needs a software partner for a reporting automation project and API integration."
+  },
+  {
+    "source": "inbound_email",
+    "external_id": "demo-noise-003",
+    "subject": "Monthly community newsletter",
+    "sender": "newsletter@example.test",
+    "received_at": "2026-08-14T07:30:00+00:00",
+    "body": "Title: August community newsletter\n\nA general round-up of events, articles and announcements from this month."
+  }
+]

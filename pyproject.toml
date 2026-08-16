@@ -1,0 +1,51 @@
+[build-system]
+requires = ["hatchling>=1.27"]
+build-backend = "hatchling.build"
+
+[project]
+name = "signal-route"
+version = "0.1.0"
+description = "A connector-driven opportunity qualification and outreach engine."
+readme = "README.md"
+requires-python = ">=3.11"
+license = { text = "Proprietary" }
+authors = [{ name = "SignalRoute" }]
+dependencies = []
+
+[project.optional-dependencies]
+ai = ["openai>=1.68,<2"]
+gmail = [
+  "google-api-python-client>=2.160,<3",
+  "google-auth>=2.38,<3",
+  "google-auth-oauthlib>=1.2,<2",
+]
+dev = [
+  "pytest>=8.3,<9",
+  "pytest-cov>=6,<7",
+  "ruff>=0.11,<1",
+]
+all = [
+  "openai>=1.68,<2",
+  "google-api-python-client>=2.160,<3",
+  "google-auth>=2.38,<3",
+  "google-auth-oauthlib>=1.2,<2",
+]
+
+[project.scripts]
+signal-route = "outreach_engine.cli:main"
+
+[tool.hatch.build.targets.wheel]
+packages = ["src/outreach_engine"]
+
+[tool.ruff]
+line-length = 100
+target-version = "py311"
+
+[tool.ruff.lint]
+select = ["E", "F", "I", "B", "UP", "SIM"]
+
+[tool.pytest.ini_options]
+addopts = "-q"
+testpaths = ["tests"]
+pythonpath = ["src"]
+

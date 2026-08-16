@@ -1,0 +1,32 @@
+{
+  "files": [
+    {
+      "id": "bid-response",
+      "kind": "docx",
+      "filename": "ignition-supervisory-control-and-data-acquisition-scada-support-bid-response.docx",
+      "label": "Editable bid response",
+      "reason": "4 buyer-facing section(s) combined in order"
+    },
+    {
+      "id": "pricing-schedule",
+      "kind": "xlsx",
+      "filename": "ignition-supervisory-control-and-data-acquisition-scada-support-pricing-schedule.xlsx",
+      "label": "Editable pricing schedule",
+      "reason": "Kept separate from the narrative response for upload and commercial review"
+    },
+    {
+      "id": "attachment-1-schedule-3-form-of-tender",
+      "kind": "docx",
+      "filename": "ignition-supervisory-control-and-data-acquisition-scada-support-schedule-3-form-of-tender.docx",
+      "label": "Schedule 3 – Form of Tender",
+      "reason": "The buyer asks for this as a separate attachment"
+    },
+    {
+      "id": "attachment-2-schedule-5-pricing-schedule",
+      "kind": "docx",
+      "filename": "ignition-supervisory-control-and-data-acquisition-scada-support-schedule-5-pricing-schedule.docx",
+      "label": "Schedule 5 – Pricing Schedule",
+      "reason": "The buyer asks for this as a separate attachment"
+    }
+  ]
+}
