@@ -183,13 +183,13 @@ class BidPackClassifier:
 
         extension = Path(filename).suffix.casefold()
         if uploaded and extension in {".pdf", ".doc", ".docx", ".odt", ".rtf"}:
-            generic_tender = re.search(r"\b(tender|bid|procurement|contract)\b", name_text)
-            if generic_tender:
-                document.document_role = "tender_instructions"
-                document.confidence = 0.88
-                document.is_core = True
-                document.classification_reason = "User-supplied governing tender document."
-                return
+            document.document_role = "tender_instructions"
+            document.confidence = 0.90
+            document.is_core = True
+            document.classification_reason = (
+                "User-supplied bid-pack document; included in the response context."
+            )
+            return
         if document.document_role == "unclassified":
             document.document_role = "supporting"
             document.confidence = 0.35 if not uploaded else 0.7
